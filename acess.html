@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Acessórios – Degas DrumShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background: #d95f02;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #d95f02;
+            margin-bottom: 1rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card h3 {
+            margin: 0.5rem 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #d95f02;
+            margin: 0.5rem 0;
+        }
+
+        .btn,
+        .ver-mais a {
+            background: #d95f02;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover,
+        .ver-mais a:hover {
+            background: #f6b26b;
+        }
+
+        .ver-mais {
+            margin: 1.5rem 0 3rem;
+            text-align: center;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Acessórios para Bateria</h1>
+        <p>Encontre tudo que seu kit precisa para brilhar</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Baquetas</h2>
+        <div class="products">
+            <div class="card">
+                <img src="data:image/webp;base64,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"
+                    alt="Vic Firth 5A">
+                <div class="card-content">
+                    <h3>Vic Firth 5A</h3>
+                    <p>Versáteis e balanceadas para qualquer estilo musical.</p>
+                    <div class="price">R$ 99,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_868592-MLU72023925019_092023-O.webp" alt="ProMark 5B">
+                <div class="card-content">
+                    <h3>ProMark 5B Oak</h3>
+                    <p>Mais robustez e durabilidade com madeira japonesa.</p>
+                    <div class="price">R$ 109,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP._EKq10jA72MNlVukdU1C1QHaGN?w=213&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                    alt="Rix Signature 7A">
+                <div class="card-content">
+                    <h3>Rix Signature 7A</h3>
+                    <p>Leves e ágeis para dinâmicas suaves em jazz e pop.</p>
+                    <div class="price">R$ 79,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="ver-mais"><a href="#">Ver mais baquetas</a></div>
+
+        <h2>Peles</h2>
+        <div class="products">
+            <div class="card">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Remo Ambassador 14">
+                <div class="card-content">
+                    <h3>Remo Ambassador 14"</h3>
+                    <p>Resposta aberta e sustain médio para caixa e tons.</p>
+                    <div class="price">R$ 159,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAIwAjAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQMEAgUGB//aAAgBAQAAAAD9lAACYg44WdRXyvJmIVTY8jNT9Lzk53dTMRV30eX5z6HNk4u9TqY45sBxRjp5jd6UxTaDmrHm4g96xRaEV5clfI9XbEAroxVcCN/qRAc048/EIhu9aIEV5MlcHJv9WK+zjPip5IHpejFFqKcWfmHIe5oinuasmWuIgNPtTEUd58NXEA79u6Y5rzZc9cQJ79PXZ1FWXDSzRymy1s26u4c1561XLvtov7mQAAP/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oACgICEAMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8QAOhAAAgECAgcFBAcJAAAAAAAAAQIAAxEhMQQFEBITIFEyQWFxoQYUIlIVMDM0YoGxFiMkQEJDU5HB/9oACAEBAAE/ANl+S8bSaC51Fnvej/P6Ge96P/kEFRGyYHkvL87uqC7Hy6mXrPkAg8cTOChtv3c/iN4FAyAG00aTZoPMYTh1E7FS/g2MFaxC1BuH0PIM+VnN9xBdu/oIlMKd44sc2O3T9daFq7SE0euKpqPResAiXuqT9p9TcdKPGqEsQAwS6YqGzi+12pXpI6tpBLbll4Vu3fMkgDLYWtKlS+GYlOsafUr07x5RWDAEG42DPkdjcInaOZ6CKoQWHJpmq6GmaVQ0pkXi0U3UbG+e93HKJ7LarRCi6HowFgOxlZt/CP7M6uZay+70AKpTfG61mCCwDAMAYTYWEqPbCM0vKNc028O+AggEQZ7XbcUt6dTEUqMTdjiTzkx2tHa8J2XmiVseGT5QZ7T8VXwT9TzkxjKj3hPICVIIzEpOKiq3XYcBKXYDHNiWP585MqP3RjDy6tO/dCcjsrkii9ulv94TLDmJjtYR2hPLeatP8SB1Gyv9kfNf15iYxlR7mE8+rvvaeR2aR9ix6WPrykxjKr90Yw8+rfvS+R2ON5GHUWlMlkU+HITHawjG8J+o1ctnZ9qfC7p1+IbSYzWlR7mE/U6LT4dNRtqqbBl7S4iKwZQRkYYTKr90Yw7L82i0jUqX7hByH90xP9DZ+BjGVHsIzQmX50RqjBVlKkKSBRBntJtGcWtN7cwGK+olR7mFoTLy8vLy8vEUucPzMoBKYwge8Xa4MfelRmE4oOFS4PzD/ojo4G8vxL1XGGpOIJxJxBOJED1DZFJMsidtt4/Kp/UwVHY9B3AZCU96IGiDbYwpfMRtHRu6Nq9Wn0XVQ7yOVMbV+ksPjp038TgfSHU7N/ZZfJwZ9CP+P0n0K/yufzUQarqILro6ebNeHV+lMLO4C9BgIurAuZi6GiwUVHdAtu6Afyn/xAAUEQEAAAAAAAAAAAAAAAAAAABg/9oACAECAQE/ACP/xAAUEQEAAAAAAAAAAAAAAAAAAABg/9oACAEDAQE/ACP/2Q=="
+                    alt="Evans G2 12">
+                <div class="card-content">
+                    <h3>Evans G2 12"</h3>
+                    <p>Pele de duas camadas, ataque definido e durabilidade.</p>
+                    <div class="price">R$ 134,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.i6kugXAtkmQGFIc9GB5x6AHaHa?w=198&h=198&c=7&r=0&o=7&pid=1.7&rm=3"
+                    alt="Attack Terry Bozzio">
+                <div class="card-content">
+                    <h3>Attack Terry Bozzio 8"</h3>
+                    <p>Para fusões criativas e sons secos em toms pequenos.</p>
+                    <div class="price">R$ 89,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="ver-mais"><a href="#">Ver mais peles</a></div>
+
+        <h2>Microfones</h2>
+        <div class="products">
+            <div class="card">
+                <img src="data:image/webp;base64,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"
+                    alt="Shure PGA52">
+                <div class="card-content">
+                    <h3>Shure PGA52 (bumbo)</h3>
+                    <p>Microfone dinâmico com excelente definição para graves.</p>
+                    <div class="price">R$ 799,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.a017fca15d4462ed613dc72f1ff757ca?rik=%2bc%2fVoKouJFcekA&pid=ImgRaw&r=0"
+                    alt="Audio-Technica MB6K">
+                <div class="card-content">
+                    <h3>Audio-Technica MB6K</h3>
+                    <p>Ideal para surdos e tons, resistente e fiel.</p>
+                    <div class="price">R$ 439,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.hg8ojZMmcADzhncHGguzTgHaHa?rs=1&pid=ImgDetMain"
+                    alt="Takstar DMS">
+                <div class="card-content">
+                    <h3>Takstar DMS Kit</h3>
+                    <p>Kit de 7 microfones para bateria completo e custo-efetivo.</p>
+                    <div class="price">R$ 949,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="ver-mais"><a href="#">Ver mais microfones</a></div>

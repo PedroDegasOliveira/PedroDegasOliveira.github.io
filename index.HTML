@@ -1,0 +1,331 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Degas DrumShop</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Ícones Font Awesome (WhatsApp, Facebook) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pOa2g8VHUxI3eO0QG0iVYd6D7UfW+UxVMV5zv6dO4pUwcogG0Z2wOjL8aZ1l5zjFkkGidvRr5o8a2NjZtI5N6w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com/seuPerfil" target="_blank" rel="noopener" aria-label="Facebook"><i
+                    class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="https://th.bing.com/th/id/OIP.Eyb2iVkgbRQ5doc9ab8nBQHaHa?rs=1&pid=ImgDetMain"
+                    alt="Degas DrumShop" />
+            </a>
+            <a class="degasdrumshop">Degas DrumShop</a>
+            <!-- Busca -->
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="q" placeholder="O que você procura?" aria-label="Busca" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Bem-vindo à Degas DrumShop</h1>
+            <p>
+                Encontre baterias, pratôs, baquetas e acessórios para elevar seu groove
+                ao próximo nível.
+            </p>
+            <div class="cta-buttons">
+                <a href="about.html" class="btn btn-primary">Saiba Mais</a>
+                <a href="#categorias" class="btn btn-secondary">Compre por Categoria</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seções Futuras -->
+    <main>
+        <!-- <section id="sobre">…</section>
+    <section id="categorias">…</section> -->
+    </main>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Degas DrumShop</title>
+
+        <!-- CSS embutido -->
+        <style>
+            /* Seção Categorias */
+            #categorias {
+                padding: 4rem 0;
+            }
+
+            #categorias .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            #categorias h2 {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                color: #333;
+            }
+
+            #categorias .cards {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                justify-content: center;
+            }
+
+            #categorias .card {
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                max-width: 300px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #categorias .card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            #categorias .card h3 {
+                margin: 1rem 0 0.5rem;
+                font-size: 1.25rem;
+                color: #222;
+            }
+
+            #categorias .card p {
+                flex: 1;
+                padding: 0 1rem;
+                font-size: 0.95rem;
+                color: #555;
+            }
+
+            #categorias .card a {
+                margin: 1rem;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 4px;
+                font-weight: bold;
+                background: #d95f02;
+                color: #fff;
+                transition: background 0.3s;
+            }
+
+            #categorias .card a:hover {
+                background: #f6b26b;
+            }
+
+            @media (max-width: 768px) {
+                #categorias .cards {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                #categorias .card {
+                    max-width: 90%;
+                }
+            }
+        </style>
+    </head>
+
+
+    <!-- …seu header, hero etc… -->
+
+    <!-- Seção Categorias (com CSS já embutido) -->
+    <section id="categorias">
+        <div class="container">
+            <h2>Categorias</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.P3FSjoi3we6sXqJFC8f8qAHaHa?w=189&h=189&c=7&r=0&o=5&pid=1.7"
+                        alt="Baterias Degas DrumShop">
+                    <h3>Baterias</h3>
+                    <p>Conjuntos acústicos e eletrônicos para todos os estilos.</p>
+                    <a href="kits.html">Ver Baterias</a>
+                </div>
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.24Xt0U3iHU1_xN--vTjrnAHaHa?w=217&h=216&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Pratos Degas DrumShop">
+                    <h3>Pratos</h3>
+                    <p>Ride, crash, hi-hat e muito mais com diversas marcas.</p>
+                    <a href="pratos.html">Ver Pratos</a>
+                </div>
+                <div class="card">
+                    <img src="data:image/webp;base64,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"
+                        alt="Acessórios Degas DrumShop">
+                    <h3>Acessórios</h3>
+                    <p>Baquetas, estantes, peles, cases e tudo que você precisa.</p>
+                    <a href="acess.html">Ver Acessórios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #fff; padding: 6rem 0;">
+        <div style="max-width: 1100px; margin: 0 auto; padding: 0 1rem;">
+            <h2 style="font-size: 2rem; color: #d95f02; margin-bottom: 2rem; text-align: center;">
+                Artistas Parceiros Degas DrumShop
+            </h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem;">
+                Conheça alguns dos artistas incríveis que carregam o som da Degas DrumShop para os palcos do mundo. São
+                referências que inspiram a próxima geração de bateristas com talento, técnica e identidade musical.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+
+                <div
+                    style="background: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); padding: 2rem;">
+                    <img src="https://th.bing.com/th/id/OIP.Esg9pXu0xVBhvRvE4x774wHaE7?w=264&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="JP Silva"
+                        style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem;">
+                    <h3 style="margin-bottom: 0.5rem;">Alessandro Kelvin</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 0.75rem;">
+                        Destaque na cena instrumental brasileira, Alessandro Kelvin já gravou com grandes nomes e é
+                        reconhecido por sua
+                        metodologia de tocar interessantissima, segundo ele, "carinho é só na morena", "tem que comer
+                        com farinha"
+                    </p>
+                    <p style="font-size: 0.9rem;"><strong>Usa:</strong> c.ibanez, pratos Orion, peles aquarian
+                        drumheads</p>
+                    <p style="margin-top: 0.75rem;"><a href="#"
+                            style="color: #d95f02; text-decoration: underline;">@KelvãoObamão</a></p>
+                </div>
+
+                <div
+                    style="background: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); padding: 2rem;">
+                    <img src="https://th.bing.com/th/id/OIP.qoMdiSqLSQUAa0wgNkEanQHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Larissa Batista"
+                        style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem;">
+                    <h3 style="margin-bottom: 0.5rem;">Aquiles Priester</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 0.75rem;">
+                        Mais um do power metal, baterista de apartamento e luvinha, pedais duplos rápidos e poliritimos
+                        interessantissimos S
+                    </p>
+                    <p style="font-size: 0.9rem;"><strong>Usa:</strong> Mapex, pratos Paiste, baquetas Vic
+                        Firth</p>
+                    <p style="margin-top: 0.75rem;"><a href="#"
+                            style="color: #d95f02; text-decoration: underline;">@aquilesSemCales</a></p>
+                </div>
+
+                <div
+                    style="background: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); padding: 2rem;">
+                    <img src="https://th.bing.com/th/id/OIP.xEQw4DdpJlAgUrGZ7sKnJwAAAA?w=115&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Tiago Lopes"
+                        style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem;">
+                    <h3 style="margin-bottom: 0.5rem;">Tiago Lopes</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 0.75rem;">
+                        Não gravou o angels cry na Alemanha, o produtor era perfeccionista
+                    </p>
+                    <p style="font-size: 0.9rem;"><strong>Usa:</strong> Roland TD-07, pads SPDSX, hardware DW</p>
+                    <p style="margin-top: 0.75rem;"><a href="#"
+                            style="color: #d95f02; text-decoration: underline;">@AlexHowzwartz</a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ====== Footer Isolado ====== -->
+    <style>
+        .footer {
+            background: #000;
+            color: #fff;
+            padding: 3rem 0;
+            font-size: 0.95rem;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
+        .footer .map,
+        .footer .info {
+            flex: 1 1 300px;
+        }
+
+        .footer .info h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer .info p {
+            margin: 0.4rem 0;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="map">
+                <h4>Nosso Endereço</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.123456789!2d-46.5412345!3d-22.9712345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa0abcdef123%3A0xabcdef1234567890!2sDegas%20DrumShop!5e0!3m2!1spt-BR!2sbr!4v1610000000000"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="info">
+                <h4>Informações da Loja</h4>
+                <p><strong>Endereço:</strong> Rua das Batidas, 123 – Centro, Bragança Paulista, SP</p>
+                <p><strong>Telefone:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                <p><strong>E-mail:</strong> <a href="mailto:contato@degasdrumshop.com">contato@degasdrumshop.com</a></p>
+                <p><strong>Horário de Funcionamento:</strong><br>
+                    Seg–Sex: 09h–18h<br>
+                    Sáb: 09h–13h
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- …resto da página… -->
+
+</body>
+
+</html>

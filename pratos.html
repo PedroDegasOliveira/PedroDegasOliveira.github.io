@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Pratos – Degas DrumShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: #d95f02;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #d95f02;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1rem;
+            flex: 1;
+        }
+
+        .card h3 {
+            margin: 0.5rem 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #d95f02;
+            margin: 0.75rem 0;
+        }
+
+        .btn,
+        .ver-mais {
+            display: inline-block;
+            background: #d95f02;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover,
+        .ver-mais:hover {
+            background: #f6b26b;
+        }
+
+        .ver-mais {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .brand-filters {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .brand-filters a {
+            background: #eee;
+            color: #333;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .brand-filters a:hover {
+            background: #d95f02;
+            color: white;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pratos de Bateria</h1>
+        <p>Escolha por tipo ou marca e eleve seu som</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Compre por Marca -->
+        <h2 class="section-title">Compre por Marca</h2>
+        <div class="brand-filters">
+            <a href="#">Zildjian</a>
+            <a href="#">Sabian</a>
+            <a href="#">Meinl</a>
+            <a href="#">Orion</a>
+            <a href="#">Bosphorus</a>
+            <a href="#">Paiste</a>
+        </div>
+
+        <!-- Rides -->
+        <h2 class="section-title">Rides</h2>
+        <div class="products">
+            <div class="card">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Zildjian K Custom Ride">
+                <div class="card-content">
+                    <h3>Zildjian K Custom 20"</h3>
+                    <p>Brilho médio e ping equilibrado para jazz e rock.</p>
+                    <div class="price">R$ 1.749,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.5rTrBXNbiuZOSiKnkVEkYAHaGC?w=236&h=192&c=7&r=0&o=7&pid=1.7&rm=3"
+                    alt="Sabian AAX Raw Bell Dry Ride">
+                <div class="card-content">
+                    <h3>Sabian AAX Raw Bell 21"</h3>
+                    <p>Ride com bell forte e som seco ideal para estilos modernos.</p>
+                    <div class="price">R$ 1.399,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_768358-MLU71094614010_082023-O.webp"
+                    alt="Meinl Byzance Ride">
+                <div class="card-content">
+                    <h3>Meinl Byzance Vintage</h3>
+                    <p>Som encorpado e visual retrô com acabamento escovado.</p>
+                    <div class="price">R$ 2.199,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <p class="ver-mais"><a href="#">Ver mais rides</a></p>
+
+        <!-- Hi-Hats -->
+        <h2 class="section-title">Hi-Hats</h2>
+        <div class="products">
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_986583-MLU70354981123_072023-O.webp"
+                    alt="Zildjian New Beat Hi-Hat">
+                <div class="card-content">
+                    <h3>Zildjian New Beat 14"</h3>
+                    <p>Hi-hat clássico, versátil e com abertura definida.</p>
+                    <div class="price">R$ 1.599,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.Lx31kDCd7ZLfWoOm-kUNPAHaHa?rs=1&pid=ImgDetMain"
+                    alt="Sabian XSR Hi-Hat">
+                <div class="card-content">
+                    <h3>Sabian XSR 14"</h3>
+                    <p>Excelente resposta com ótima relação custo-benefício.</p>
+                    <div class="price">R$ 1.199,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_863190-MLU73107219465_112023-O.webp"
+                    alt="Meinl HCS Bronze Hi-Hat">
+                <div class="card-content">
+                    <h3>Meinl HCS Bronze 14"</h3>
+                    <p>Para estudos e iniciantes com ataque claro e corte definido.</p>
+                    <div class="price">R$ 549,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <p class="ver-mais"><a href="#">Ver mais hi-hats</a></p>
+
+        <!-- Chinas -->
+        <h2 class="section-title">Chinas</h2>
+        <div class="products">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.1xrYCNLdxyh7iob-_7qjhQHaHa?w=166&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                    alt="Meinl Classics Custom China">
+                <div class="card-content">
+                    <h3>Meinl Classics Custom 18"</h3>
+                    <p>Explosão rápida e curta com visual brilhante.</p>
+                    <div class="price">R$ 899,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP._4NvQ1L2i0_LJk7AHByInQHaFj?rs=1&pid=ImgDetMain"
+                    alt="Orion Rage Bass China">
+                <div class="card-content">
+                    <h3>Orion Rage Bass 16"</h3>
+                    <p>Ataque agressivo para metal e estilos pesados.</p>
+                    <div class="price">R$ 579,00</div>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_957092-MLA80587319255_112024-O.webp"
+                    alt="Sabian B8X Chinese">
+                <div class="card-content">
+                    <h3>Sabian B8X Chinese 18"</h3>
+                    <p>Resposta rápida e timbre cortante, ideal para efeitos.</p>
+                    <div class="price">R$ 799,00</div>
+                    <a href="#" class="btn">Comprar</a
